@@ -13,7 +13,7 @@
 #include <stdio_ext.h>
 
 
-int ingresarNumero(int *numeroIngresado, int *cantidadNumerosIngresados,int *sumaNumeros);
+int ingresarNumero(int *numeroIngresado, int *cantidadNumerosIngresados,float *sumaNumeros);
 int esMaximo(int numeroIngresado,int cantidadNumerosIngresados,int *numeroMaximo);
 int esMinimo(int numeroIngresado,int cantidadNumerosIngresados,int *numeroMinimo);
 float calcularPromedio(float sumaNumeros,int cantidadNumerosIngresados,float *calculoPromedio);
@@ -37,7 +37,7 @@ int main(void)
 	mostrarResultado(numMaximo,numMinimo,promedio,cantidadNumIngresados);
 }
 
-int ingresarNumero(int *numeroIngresado, int *cantidadNumerosIngresados,int *sumaNumeros)
+int ingresarNumero(int *numeroIngresado, int *cantidadNumerosIngresados,float *sumaNumeros)
 {
 	int retorno = -1;
 	char respuesta = 's';
